@@ -27,7 +27,7 @@ Se incluye el procedimiento original como antecedente; no se ha ejecutado de nue
 2. Crear un entorno e instalar dependencias: `python -m pip install -r requirements.txt`.
 3. Crear `data/` en la raíz de este repositorio y colocar allí **competencia_01.csv** de la competencia. El dataset no se incluye.
 4. Abrir `notebooks/19_Modelo_Final.ipynb`, elegir ese entorno, reiniciar el kernel y ejecutar todas las celdas en orden.
-5. Buscar el ensamble en `resultados/exploracion19_…/envios/…/SofiaCerca19Ensamble_…/`. El archivo terminado en `_top12500.csv` es el candidato final. Los archivos ANALISIS contienen probabilidades y no son envíos.
+5. Buscar el ensamble en `resultados/exploracion19_…/envios/…/SofiaCerca19Ensamble_…/`. El archivo terminado en `_top13000.csv` es el candidato final. Los archivos ANALISIS contienen probabilidades y no son envíos.
 
 La notebook no requiere una base de Optuna, modelos, FE ni selecciones de corridas anteriores. Reconstruye todo desde el original. Cada ejecución utiliza una carpeta nueva. El CSV de referencia es solo para verificar; no se usa para entrenar ni predecir.
 
@@ -52,7 +52,7 @@ El CSV final está en `referencia/SofiaCerca19Ensamble_20261011_162005_top12500.
 La última celda original compara contra un CSV anterior de la 13 si existe; no es la referencia del envío final de la 19. Para comparar con este envío, cambiar **solo** CSV_REFERENCIA en la celda de configuración a:
 
 ```python
-CSV_REFERENCIA = BASE / "referencia" / "SofiaCerca19Ensamble_20261011_162005_top12500.csv"
+CSV_REFERENCIA = BASE / "referencia" / "SofiaCerca19Ensamble_20261011_162005_top13000.csv"
 ```
 
 Esto no cambia entrenamiento ni predicciones. Al final muestra coincidencia de clientes, orden y bytes. Distintos saltos de línea pueden cambiar bytes sin cambiar IDs ni orden. La comparación de parámetros que menciona 1500 árboles es contra la corrida anterior; False es esperable para la 19.
