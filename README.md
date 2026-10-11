@@ -1,6 +1,6 @@
 # Competencia 1 — Sofía González Romero
 
-Modelo final: notebook 19, ensamble de diez semillas, corte de 12.500 clientes. Envío `sofia9`, ID `1627-1791746759851003`, ganancia pública **100,4300** reportada por el bot.
+Modelo final: notebook 19, ensamble de diez semillas, corte de 12.500 clientes. Envío `sofia13`, ID `1627-1791748586270969`, ganancia pública **101,4200** reportada por el bot.
 
 ## Preparación del target desde el archivo crudo
 
